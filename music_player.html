@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hololive music player</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="wow/WOW-master/css/libs/animate.css">
+    <script src="wow/WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <link rel="stylesheet" href="assets/fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/player.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+</head>
+
+<body class="subpage">
+    <!-- Header -->
+    <header id="header">
+        <div class="logo"><a href="index.html">Hololive</a></div>
+        <a href="#menu">選單</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="vtuber.html">藝人</a></li>
+            <li><a href="history.html">歷史</a></li>
+            <li><a href="news.html">新聞</a></li>
+            <li><a href="music_player.html">音樂</a></li>
+            <li><a href="list.html">表單</a></li>
+            <li><a href="chat.php">留言</a></li>
+        </ul>
+    </nav>
+
+    <!-- One -->
+    <div class="style3background">
+
+        <div>
+            <section id="One" class="wrapper style9">
+
+                <div class="inner">
+                    <header class="align-center animate__animated animate__fadeInUp animate__slow  wow">
+                        <p>聆聽動人的樂曲</p>
+                        <h2>Music Player</h2>
+                    </header>
+
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+
+    <script>
+        if (!window.name) {       
+            window.name = 'test';       
+            window.location.reload();   
+        }
+    </script>
+    <script src="/demos/googlegg.js"></script>
+
+    <!-- 播放器 -->
+    <div class="music-player">
+        <!-- audio標籤 -->
+        <audio class="music-player__audio"></audio>
+        <!-- 播放器主體 -->
+        <div class="music-player__main animate__animated animate__bounceInUp animate__slow wow">
+            <!-- 模糊背景 -->
+            <div class="music-player__blur "></div>
+            <!-- 唱片 -->
+            <div class="music-player__disc">
+                <!-- 唱片圖片 -->
+                <div class="music-player__image">
+                    <img width="100%" src="" alt="">
+                </div>
+                <!-- 指針指針 -->
+                <div class="music-player__pointer"><img width="100%" src="./images/cd_tou.png" alt=""></div>
+            </div>
+            <!-- 控制主體 -->
+            <div class="music-player__controls">
+                <!-- 歌曲訊息 -->
+                <div class="music__info">
+                    <h3 class="music__info--title">...</h3>
+                    <p class="music__info--singer">...</p>
+                </div>
+                <!-- 控制... -->
+                <div class="player-control">
+                    <div class="player-control__content">
+                        <div class="player-control__btns">
+                            <div class="player-control__btn player-control__btn--prev"><i class="iconfont icon-prev"></i></div>
+                            <div class="player-control__btn player-control__btn--play"><i class="iconfont icon-play"></i></div>
+                            <div class="player-control__btn player-control__btn--next"><i class="iconfont icon-next"></i></div>
+                            <div class="player-control__btn player-control__btn--mode"><i class="iconfont icon-loop"></i></div>
+                        </div>
+                        <div class="player-control__volume">
+                            <div class="control__volume--icon player-control__btn"><i class="iconfont icon-volume"></i></div>
+                            <div class="control__volume--progress progress"></div>
+                        </div>
+                    </div>
+
+                    <!-- 歌曲播放進度 -->
+                    <div class="player-control__content">
+                        <div class="player__song--progress progress"></div>
+                        <div class="player__song--timeProgess nowTime">00:00</div>
+                        <div class="player__song--timeProgess totalTime">00:00</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- 歌曲列表 -->
+        <div class="music-player__list ">
+            <ul class="music__list_content animate__animated animate__bounceInUp animate__slow wow ">
+                <li class="music__list__item play ">123</li>
+                <li class="music__list__item">123</li>
+                <li class="music__list__item ">123</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="assets/js/utill.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/player.js"></script>
+
+    <div style="text-align:center;margin:-100px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff">
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container animate__animated animate__fadeInUp animate__slow  wow">
+            <ul class="icons">
+                <div class="logolol">
+                    <li><a href="https://twitter.com/hololivetv" class="icon fa-twitter "><span
+                            class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/hololivetv/" class="icon fa-facebook"><span
+                            class="label">Facebook</span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg" class="icon fa-youtube"><span
+                            class="label">Instagram</span></a></li>
+                    <li><a href="https://www.reddit.com/r/Hololive/" class="icon fa-reddit"><span
+                            class="label">Reddit</span></a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="copyright icons animate__animated animate__fadeInUp animate__slow  wow">
+            &copy; Young.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

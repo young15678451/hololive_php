@@ -1,0 +1,1 @@
+document.querySelector("body > div:nth-child(15) > div > div.products2-items-wrap > div:nth-child(8) > div.animation-wrap > div")

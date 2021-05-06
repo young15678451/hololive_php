@@ -1,0 +1,143 @@
+button {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+#lol {
+    width: 280px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+ :root {
+    /* color */
+    --head-color: rgb(0, 110, 255);
+    --con-color: rgb(252, 145, 24);
+    --text-color: rgb(3, 11, 27);
+    --xxx-color: rgb(0, 0, 0);
+}
+
+
+/* 局部設定 */
+
+form {
+    padding: 10px 70px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 70px;
+    font-family: "Courier New", monospace;
+    text-align: center;
+    color: rgb(75, 203, 253);
+    padding-bottom: 15px;
+}
+
+#titleholo {
+    vertical-align: middle;
+}
+
+label {
+    padding: 20px 0;
+}
+
+
+/* 個人資料 */
+
+input[type=text],
+input[type=email] {
+    width: calc(50% - 3.5em);
+}
+
+
+/*個人文字 */
+
+.personal {
+    font-size: larger;
+    line-height: 40px;
+}
+
+
+/* 性別 */
+
+
+/* 生日 */
+
+select {
+    width: 55px;
+    height: 28px;
+}
+
+
+/* 偶像文字 */
+
+.vtuberwords {
+    font-size: larger;
+    line-height: 40px;
+}
+
+
+/* 偶像 */
+
+
+/* 看法文字 */
+
+.vtuberlook {
+    font-size: larger;
+    line-height: 40px;
+}
+
+
+/* 看法 */
+
+input[type=range] {
+    width: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+/*看法文字 */
+
+.likeword {
+    font-size: larger;
+    line-height: 40px;
+}
+
+
+/* 內容 */
+
+textarea {
+    font-size: 25px;
+    width: 100%;
+}
+
+
+/* 按鈕 */
+
+.pure-button {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    background: #5ad;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 標題圖片 */
+
+
+/* vtuber 大頭貼 */
