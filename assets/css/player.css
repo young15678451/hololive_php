@@ -134,8 +134,8 @@
 .music-player__image {
     text-align: center;
     width: 70%;
-    height: 57.225%;
-    border-radius: 50%;
+    height: 54%;
+    
     position: absolute;
     overflow: hidden;
     left: 0;

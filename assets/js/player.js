@@ -1,19 +1,15 @@
 //創建一個音樂播放器的類 單例模式
 class Player {
-    constructor() { //類的構造函數
-        //如果類已經有實例了，就返回這個實例
+    constructor() { 
+       
         if (Player.instance) return Player.instance;
-        //如果没有實例化，就去構造一個實例
+       
         return this.getInstance(...arguments);
     }
 
     //構建實例
     getInstance() {
         let instance = new PlayerCreator(...arguments);
-        //讓實例可以使用到Player的原型的屬性方法
-        // instance.__proto__=Player.prototype;
-        // instance.constructor=Player;
-        //把構建好的實例掛在Player類上
         Player.instance = instance;
         return instance;
     }
@@ -114,7 +110,7 @@ class Musics {
                     title: 'magnet/宝鐘マリン・潤羽るしあ',
                     singer: '宝鐘マリン&潤羽るしあ',
                     songUrl: './songs/magnet宝鐘マリン潤羽るしあcover (Houshou Marine and Uruha Rushia).mp3',
-                    imageUrl: '../images/song/magnet宝鐘マリン潤羽るしあcover (Houshou Marine and Uruha Rushia).png'
+                    imageUrl: './images/song/magnet宝鐘マリン潤羽るしあcover (Houshou Marine and Uruha Rushia).png'
 
                 },
                 {
@@ -122,35 +118,35 @@ class Musics {
                     title: 'ゴーストルール天音かなた(Cover)',
                     singer: '天音かなた',
                     songUrl: './songs/ゴーストルール天音かなた(Cover).mp3',
-                    imageUrl: '../images/song/ゴーストルール天音かなた(Cover).png'
+                    imageUrl: './images/song/ゴーストルール天音かなた(Cover).png'
                 },
                 {
                     id: 15,
                     title: '恋愛裁判　Ver.戌神ころね',
                     singer: '戌神ころね',
                     songUrl: './songs/恋愛裁判　Ver.戌神ころね.mp3',
-                    imageUrl: '../images/song/恋愛裁判　Ver.戌神ころね.png'
+                    imageUrl: './images/song/恋愛裁判　Ver.戌神ころね.png'
                 },
                 {
                     id: 16,
                     title: '失礼しますがRIP',
                     singer: 'Calliope Mori',
                     songUrl: './songs/[ORIGINAL SONG] 失礼しますがRIP Excuse My Rudeness, But Could You Please RIP - Calliope Mori.mp3',
-                    imageUrl: '../images/song/[ORIGINAL SONG] 失礼しますがRIP Excuse My Rudeness, But Could You Please RIP - Calliope Mori.png'
+                    imageUrl: './images/song/[ORIGINAL SONG] 失礼しますがRIP Excuse My Rudeness, But Could You Please RIP - Calliope Mori.png'
                 },
                 {
                     id: 17,
                     title: '曇天羊角巻わため feat.Calliope Moriオリジナル曲',
                     singer: '角巻わため',
                     songUrl: './songs/曇天羊角巻わため feat.Calliope Moriオリジナル曲.mp3',
-                    imageUrl: '../images/song/曇天羊角巻わため feat.Calliope Moriオリジナル曲.png'
+                    imageUrl: './images/song/曇天羊角巻わため feat.Calliope Moriオリジナル曲.png'
                 },
                 {
                     id: 18,
                     title: 'ゾンビランドサガフランシュシュ佐賀事変(Cover)',
                     singer: '星街すいせい&Hololive三期生',
                     songUrl: './songs/ゾンビランドサガフランシュシュ佐賀事変 星街すいせい with ホロライブファンタジー(Cover).mp3',
-                    imageUrl: '../images/song/ゾンビランドサガフランシュシュ佐賀事変 星街すいせい with ホロライブファンタジー(Cover).png'
+                    imageUrl: './images/song/ゾンビランドサガフランシュシュ佐賀事変 星街すいせい with ホロライブファンタジー(Cover).png'
                 },
                 {
                     id: 19,
